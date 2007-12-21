@@ -12,6 +12,7 @@ License:	GPL
 Group:		Databases
 Source: 	%{name}-%{version}.tar.bz2
 Patch0:		xbsql-ncurces-x86_64.patch.bz2
+Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 URL:		http://www.quaking.demon.co.uk/xbsql/
 BuildRequires:  libxbase-devel 
 BuildRequires:  libreadline-devel
