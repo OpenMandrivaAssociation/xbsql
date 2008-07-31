@@ -19,6 +19,7 @@ BuildRequires:  libxbase-devel
 BuildRequires:  libreadline-devel
 BuildRequires:  ncurses-devel
 BuildRequires:  bison
+BuildRequires:	libtool
 Requires:	xbase
 
 %description
