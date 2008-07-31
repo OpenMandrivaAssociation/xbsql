@@ -12,12 +12,11 @@ Release:	%{release}
 License:	LGPLv2+
 Group:		Databases
 Source: 	%{name}-%{version}.tar.bz2
-Patch0:		xbsql-ncurces-x86_64.patch
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 URL:		http://www.quaking.demon.co.uk/xbsql/
 BuildRequires:  libxbase-devel 
 BuildRequires:  libreadline-devel
-BuildRequires:  ncurses-devel
+BuildRequires:  ncursesw-devel
 BuildRequires:  bison
 BuildRequires:	libtool
 Requires:	xbase
@@ -48,7 +47,7 @@ Headers for %{name}
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0
+sed -i -e 's#/usr/lib/libncurses#%{_libdir}/libncurses#' configure.*
 
 %build
 rm -f config.cache
