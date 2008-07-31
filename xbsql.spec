@@ -16,7 +16,7 @@ Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 URL:		http://www.quaking.demon.co.uk/xbsql/
 BuildRequires:  libxbase-devel 
 BuildRequires:  libreadline-devel
-BuildRequires:  ncursesw-devel
+BuildRequires:  ncurses-devel
 BuildRequires:  bison
 BuildRequires:	libtool
 Requires:	xbase
