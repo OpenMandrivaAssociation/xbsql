@@ -18,7 +18,6 @@ BuildRequires:  libxbase-devel
 BuildRequires:  libreadline-devel
 BuildRequires:  ncurses-devel
 BuildRequires:  bison
-BuildRequires:	libtool
 Requires:	xbase
 
 %description
@@ -50,10 +49,9 @@ Headers for %{name}
 sed -i -e 's#/usr/lib/libncurses#%{_libdir}/libncurses#' configure.*
 
 %build
-rm -f config.cache
-autoreconf
+autoreconf -fi
 %configure2_5x
-%make LIBTOOL=%_bindir/libtool CFLAGS="%{optflags}" CXXFLAGS="%{optflags}" LDFLAGS="%{?ldflags}"
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
