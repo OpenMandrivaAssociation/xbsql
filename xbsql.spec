@@ -1,6 +1,6 @@
 %define name		xbsql
 %define version		0.11
-%define release		%mkrel 13
+%define release		%mkrel 14
 %define major		0
 %define libname		%mklibname %name %major
 %define develname	%mklibname -d %name
