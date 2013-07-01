@@ -2,7 +2,7 @@
 %define libname		%mklibname %name %major
 %define develname	%mklibname -d %name
 
-Summary:	XBSQL: An SQL wrapper for xbase
+Summary:	: An SQL wrapper for xbase
 Name:		xbsql
 Version:	0.11
 Release:	16
