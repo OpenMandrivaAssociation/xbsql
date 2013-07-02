@@ -2,10 +2,10 @@
 %define libname		%mklibname %name %major
 %define develname	%mklibname -d %name
 
-Summary:	: An SQL wrapper for xbase
+Summary:	An SQL wrapper for xbase
 Name:		xbsql
 Version:	0.11
-Release:	16
+Release:	17
 License:	LGPLv2+
 Group:		Databases
 Source0: 	%{name}-%{version}.tar.bz2
@@ -32,9 +32,9 @@ Libraries needed for %{name}
 Summary: Headers for %{name} 
 Group: Development/Other
 Conflicts: %{libname} < 0.11-15
-Requires: %{libname} = %version-%release
-Provides: %name-devel = %{EVRD}
-Obsoletes: %{name}-devel < %version-%release
+Requires: %{libname} = %{version}-%{release}
+Provides: %{name}-devel = %{EVRD}
+Obsoletes: %{name}-devel < %{version}-%{release}
 Obsoletes: %{mklibname -d xbsql 0}
 
 %description -n %{develname}
