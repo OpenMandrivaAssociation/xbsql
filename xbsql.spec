@@ -5,7 +5,7 @@
 Summary:	An SQL wrapper for xbase
 Name:		xbsql
 Version:	0.11
-Release:	17
+Release:	18
 License:	LGPLv2+
 Group:		Databases
 Source0: 	%{name}-%{version}.tar.bz2
