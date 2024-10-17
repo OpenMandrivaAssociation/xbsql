@@ -11,7 +11,7 @@ Group:		Databases
 Source0: 	%{name}-%{version}.tar.bz2
 Patch0:		xbsql-0.11-xbase64.patch
 Patch1:		xbsql-0.11-link.patch
-URL:		http://www.quaking.demon.co.uk/xbsql/
+URL:		https://www.quaking.demon.co.uk/xbsql/
 BuildRequires:  xbase-devel
 BuildRequires:  readline-devel
 BuildRequires:  bison
